@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 3</title>
+</head>
+<body>
+  <input type="text" id="meuInput">
+  <button onclick="mostrarValor()">Mostrar Valor</button>
+
+  <script>
+    let executado = false;
+
+    function mostrarValor() {
+      let valor = document.getElementById("meuInput").value;
+
+      if (!executado) {
+        alert("Valor: " + valor);
+        executado = true;
+      }
+    }
+  </script>
+</body>
+</html>
